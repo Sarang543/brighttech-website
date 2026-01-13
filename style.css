@@ -1,0 +1,290 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;   
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    background: #ffffff;
+}
+
+.logo{
+    font-weight: bold;
+    color: rgb(85, 85, 234);
+    font-size: 25px;
+}
+
+nav ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: #2563eb;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 200px;
+    background-color: #d9e3f8;
+}
+
+.hero-text h1{
+    font-size: 50px;
+}
+
+.hero-text p{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.hero-text .btn{
+    background-color: #2563eb;
+    color: white;
+    padding: 13px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.hero-text .btn:hover{
+    background: #1e40af;;
+}
+
+.hero-image img{
+    max-width: 100%;
+    height: auto;
+    
+}
+/* ----------------------------------------------------------------------- */
+
+
+.services{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services h2{
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.service-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.service-card{
+    padding: 30px;
+    box-shadow: 0 2px 8px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.service-card img{
+    max-width: 100%;
+    width: 250px;
+     height: auto;
+}
+
+.service-card span img{
+   margin-top: 20px;
+}
+
+.service-card span h3{
+   margin-top: 23px;
+}
+
+.service-card h3{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.service-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------------ */
+.about{
+    text-align: center;
+    padding: 80px 0;           
+    background-color: #e4e5e6; 
+    width: 100%; 
+    margin-top: 20px;            
+}
+
+.about h2{
+    font-size: 32px;
+    margin-bottom: 30px;           
+}
+
+.about p{
+    font-size: 18px;           
+    line-height: 1.8;          
+    max-width: 700px;          
+    margin: 0 auto;            
+    padding: 0 20px;                         
+}
+/* ------------------------------------------------------ */
+
+.contact{
+    text-align: center;
+    padding: 10px 60px;
+}
+
+.contact h2 {
+  font-size: 32px;
+}
+
+.contact form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 1px 2px;
+  
+}
+
+.contact .btn{
+    padding: 14px;
+    background-color: #1e40af;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 250px;
+    margin-top: 15px;
+    font-size: medium;
+}
+
+/* ---------------------------------------------------- */
+
+footer{
+  background-color: #24314b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/* =================== RESPONSIVE =================== */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 60px;
+  }
+
+  .hero {
+    padding: 80px 60px;
+  }
+
+  .service-cards {
+    padding: 10px 40px;
+   
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-text .btn {
+    width: 100%;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .contact .btn {
+    width: 100%;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .services h2,
+  .about h2,
+  .contact h2 {
+    font-size: 26px;
+  }
+}
+
